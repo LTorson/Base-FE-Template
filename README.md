@@ -1,9 +1,5 @@
-![Base](https://s4.postimg.org/7xnyqg9m5/Noahs-_Ark.jpg)
-
-Base
-====
-
 Web Development Template
+====
 
 ## Set up
 - Need to ensure you have everything on your machine

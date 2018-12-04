@@ -1,83 +1,51 @@
 {
-    "extends": [
-        "airbnb",
-        "plugin:vue/recommended"
-    ],
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true,
-        "node": true,
-        "jquery": true
-    },
-    "rules": {
-        "no-shadow": [
-            2,
-            {
-                "builtinGlobals": true,
-                "hoist": "functions",
-                "allow": []
-            }
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "function-paren-newline": [
-            "error",
-            "consistent"
-        ],
-        "indent": [
-            0,
-            4,
-            {
-                "SwitchCase": 4
-            }
-        ],
-        "func-names": [
-            "error",
-            "as-needed"
-        ],
-        "no-plusplus": [
-            "error",
-            {
-                "allowForLoopAfterthoughts": true
-            }
-        ],
-        "no-param-reassign": [
-            "error",
-            {
-                "props": false
-            }
-        ],
-        "comma-dangle": [
-            "error",
-            {
-                "arrays": "only-multiline",
-                "objects": "only-multiline",
-                "functions": "never"
-            }
-        ],
-        "prefer-destructuring": [
-            "error",
-            {
-                "array": true,
-                "object": false
-            },
-            {
-                "enforceForRenamedProperties": false
-            }
-        ],
-        "vue/html-indent": 4,
-        "vue/max-attributes-per-line": [
-            2,
-            {
-                "singleline": 3,
-                "multiline": {
-                    "max": 1,
-                    "allowFirstLine": true
-                }
-            }
-        ]
-    }
+	"extends": [
+		"airbnb",
+		"plugin:vue/essential",
+		"plugin:vue/base"
+	],
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true,
+		"jquery": true
+	},
+	"parserOptions": {
+		"parser": "babel-eslint",
+		"ecmaVersion": 2017,
+		"sourceType": "module"
+	},  
+	"rules": {
+		"arrow-spacing": ["error", {
+			"before": true,
+			"after": true
+		}],
+		"comma-dangle": ["error", "always"],
+		"curly": "error",
+		"indent": [2, "tab"],
+		"no-tabs": 0,
+		"keyword-spacing": ["error", {
+			"before": true,
+			"after": true
+		}],
+		"linebreak-style": ["error", "windows"],
+		"object-curly-spacing": ["error", "always"],
+		"quotes": ["error", "single"],
+		"max-len": [2, 180, 4, {"ignoreUrls": true}],
+		"semi": ["error", "always"],
+		"space-before-blocks": ["error", "always"],
+		"space-before-function-paren": ["error", "always"],
+		"vue/html-indent": 3,
+		"vue/max-attributes-per-line": [
+			2,
+			{
+				"singleline": 3,
+				"multiline": {
+					"max": 1,
+					"allowFirstLine": true
+				}
+			}
+		]
+	}
 }
