@@ -1,9 +1,11 @@
-![Base](https://s4.postimg.org/7xnyqg9m5/Noahs-_Ark.jpg)
-
-Base
+Zeus
 ====
 
-Web Development Template
+Zeus Web Development Template
+
+![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
+![JQuery](https://img.shields.io/badge/JQuery-1.11.1-green.svg)
+![Webpack](https://img.shields.io/badge/Webpack-3.10.0-brightgreen.svg)
 
 ## Set up
 - Need to ensure you have everything on your machine
@@ -26,8 +28,8 @@ Web Development Template
 We currently have two folders assets and site.
 To help assist with the BE implementation we can rename the folders to match the project e.g.
 
-- Base.Assets
-- Base.Site
+- Zeus.Assets
+- Zeus.Site
 
 ## FAQ's
 
@@ -35,7 +37,3 @@ To help assist with the BE implementation we can rename the folders to match the
     + We can tell browser sync about our site by either updating the webpack.mix.js file or running npm run watch -- --env-proxy localhost:{portnumber} e.g. localhost:25812
 - I've added some css/scripts to the folder but it's not showing up in Git or other people?
     + By default all assets below `/css` or `/scripts` are ignored so that they don't show up as changes when updating source files. To solve this any libraries needed should go in a subdirectory called vendor e.g. `/css/vendor/myLibrary.css` or `/scripts/vendor/jquery.min.js`
-
-## To do list
-
-
